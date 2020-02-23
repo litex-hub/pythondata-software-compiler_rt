@@ -1,0 +1,2 @@
+graft litex/data/software/compiler_rt/data/
+global-exclude *.py[cod]
