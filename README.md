@@ -19,7 +19,7 @@ with open(os.path.join(litex.data.software.compiler_rt.location, my_data_file)) 
 
 The data files come from https://git.llvm.org/git/compiler-rt.git/
 and are imported using `git subtrees` to the directory
-[litex/data/software/compiler_rt/data](litex/data/software/compiler_rt/data].
+[litex/data/software/compiler_rt/data](litex/data/software/compiler_rt/data).
 
 
 
