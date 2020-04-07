@@ -4,11 +4,11 @@ data_location = os.path.join(__dir__, "data")
 src = "https://git.llvm.org/git/compiler-rt.git/"
 
 # Module version
-version_str = "0.0.post6186"
-version_tuple = (0, 0, 6186)
+version_str = "0.0.post6187"
+version_tuple = (0, 0, 6187)
 try:
     from packaging.version import Version as V
-    pversion = V("0.0.post6186")
+    pversion = V("0.0.post6187")
 except ImportError:
     pass
 
@@ -36,10 +36,10 @@ Date:   Fri Nov 6 23:19:29 2015 +0000
 """
 
 # Tool version info
-tool_version_str = "0.0.post46"
-tool_version_tuple = (0, 0, 46)
+tool_version_str = "0.0.post47"
+tool_version_tuple = (0, 0, 47)
 try:
     from packaging.version import Version as V
-    ptool_version = V("0.0.post46")
+    ptool_version = V("0.0.post47")
 except ImportError:
     pass

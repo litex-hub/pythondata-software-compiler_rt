@@ -5,14 +5,24 @@ Non-Python data files required to use the compiler_rt with
 
 The data files can be found under the Python module `litex.data.software.compiler_rt`. The
 `litex.data.software.compiler_rt.location` value can be used to find the files on the file system.
-For example;
 
+Example of getting the data file directly;
 ```python
 import litex.data.software.compiler_rt
 
 my_data_file = "abc.txt"
 
-with open(os.path.join(litex.data.software.compiler_rt.location, my_data_file)) as f:
+with open(os.path.join(litex.data.software.compiler_rt.data_location, my_data_file)) as f:
+    print(f.read())
+```
+
+Example of getting the data file using `litex.data.find` API;
+```python
+from litex.data.find import find_data
+
+my_data_file = "abc.txt"
+
+with open(os.path.join(find_data("software", "compiler_rt"), my_data_file)) as f:
     print(f.read())
 ```
 
