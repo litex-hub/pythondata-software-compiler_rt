@@ -7,7 +7,8 @@ This Useful for usage with tools like
 [LiteX](https://github.com/enjoy-digital/litex.git).
 
 The data files can be found under the Python module `pythondata_software_compiler_rt`. The
-`pythondata_software_compiler_rt.location` value can be used to find the files on the file system.
+`pythondata_software_compiler_rt.data_location` value can be used to find the files on the file
+system.
 
 Example of getting the data file directly;
 ```python
