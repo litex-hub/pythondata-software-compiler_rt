@@ -3,7 +3,7 @@
 Non-Python  files needed for the software compiler_rt packaged
 into a Python module so they can be used with Python libraries and tools.
 
-This Useful for usage with tools like
+This is useful for usage with tools like
 [LiteX](https://github.com/enjoy-digital/litex.git).
 
 The data files can be found under the Python module `pythondata_software_compiler_rt`. The
