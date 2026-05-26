@@ -1,9 +1,16 @@
+import re
+
 import setuptools
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
-from pythondata_software_compiler_rt import version_str
+with open("pythondata_software_compiler_rt/__init__.py", "r") as fh:
+    version_str = re.search(
+        r'^version_str = "([^"]+)"',
+        fh.read(),
+        re.MULTILINE,
+    ).group(1)
 
 setuptools.setup(
     name="pythondata-software-compiler_rt",
@@ -24,7 +31,7 @@ Python module containing data files for LLVM Compiler RT Module software.""",
     zip_safe=False,
     packages=setuptools.find_packages(),
     package_data={
-    	'software_compiler_rt': ['software_compiler_rt/data/**'],
+        'pythondata_software_compiler_rt': ['data/**'],
     },
     include_package_data=True,
     project_urls={
